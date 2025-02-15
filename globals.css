@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Hindi Font';
+  src: url('/fonts/hindi-font.woff2') format('woff2');
+}
+
+body {
+  @apply bg-gray-900 text-gray-900;
+}
+
+.font-hindi {
+  font-family: 'Hindi Font', sans-serif;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .text-4xl {
+    font-size: 2rem;
+  }
+
+  .grid {
+    gap: 1rem;
+  }
+}
+
